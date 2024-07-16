@@ -81,7 +81,7 @@ app.get('/mode', function getMostFrequent(req, res, next){
 
 
 app.get('/all', function getAll(req,res,next){
-
+    debugger;
     if(!req.query.nums){
         throw new ExpressError('You must enter a query key of (nums) which is a comma-separated list of numbers.',400);
     }
